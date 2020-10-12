@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Top Ten Universities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+
+</head>
+<style>
+div{
+    z-index:100;
+        color:rgb(137, 158, 149);
+        font-size:30px;
+        font-weight:400;
+        font-style: oblique;
+        text-decoration: none;
+
+}
+</style>
+
+<body>
+  <% include partials/nav3.ejs%> 
+
+      <hr>
+    <h1>
+          <em style="color:whitesmoke;">Top Ten Universities</em>
+            </h1>
+            <hr>
+<div id="mapid" style=" height: 400px;"></div>
+
+
+                            
+</body>
+<script>
+
+	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+	L.marker([42.37, -71.1]).addTo(mymap)
+        .bindPopup('<a href="https://www.harvard.edu/">Harvard University</a>').openPopup();
+    
+    L.marker([42.3592, -71.09211]).addTo(mymap)
+        .bindPopup('<a href="http://www.mit.edu/">Massachusetts Institute of Technology</a>').openPopup();
+        
+       
+            L.marker([33.65184,-117.83968]).addTo(mymap)
+        .bindPopup('<a href="https://www.stanford.edu/">Stanford University</a>').openPopup();
+        L.marker([34.13726, -118.12822]).addTo(mymap)
+        .bindPopup('<a href="https://www.caltech.edu/">California Institute of Technology</a>').openPopup();
+        L.marker([51.77697,-1.26233]).addTo(mymap)
+        .bindPopup('<a href="http://www.ox.ac.uk/">Oxford University</a>').openPopup();
+        
+	L.marker([52.20167,0.11779]).addTo(mymap)
+        .bindPopup('<a href="https://www.cam.ac.uk/">University of Cambridge</a>').openPopup();
+    
+    L.marker([47.37654,8.54809]).addTo(mymap)
+        .bindPopup('<a href="https://ethz.ch">Eth Zurich</a>"').openPopup();
+        
+        L.marker([51.51696,-0.17009]).addTo(mymap)
+        .bindPopup('<a href="https://www.imperial.ac.uk/">Imperial College London</a>').openPopup();
+            L.marker([41.87811,-87.62980]).addTo(mymap)
+        .bindPopup('<a href="https://www.uchicago.edu/">University of Chicago</a>').openPopup();
+        L.marker([51.52471,-0.13357]).addTo(mymap)
+        .bindPopup('<a href="https://www.ucl.ac.uk/">University college london</a>').openPopup();
+       
+
+
+    var popup = L.popup();
+
+
+
+
+  
+
+</script>
+</html>

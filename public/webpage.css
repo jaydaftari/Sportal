@@ -1,0 +1,141 @@
+html{
+    font-size: 1.5em;
+    color: white;
+    background: linear-gradient(50deg, rgb(17, 17, 15), transparent 50%), linear-gradient(130deg, transparent 60%, #ca0672), linear-gradient(rgb(14, 0, 0), #ca0672);
+}
+  
+  /* visited link */
+  a:visited {
+    color: yellow;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color:black;
+  }
+
+  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
+
+.innerWrapper {
+	max-width: 920px;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+}
+
+h2, h4 {
+	font-family: 'Abril Fatface', serif;
+}
+
+h2 {
+	font-size: 3rem;
+	/* text-align: center; */
+	padding-top: 10px;
+	margin: 0 0 30px 0;
+}
+
+/* NAV SECTION */
+
+.search {
+	padding: 20px 5px 18px 10px;
+	margin: 0;
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+	font-size: 1.4rem;
+	text-align: left;
+  font-variant: small-caps;
+}
+ input {
+    margin: 0 0 0.5em 0;
+		font-size: 1em;
+		width:150%;
+	}
+	input[type=text]:focus {
+		border: 3px solid rgb(17, 17, 15);
+	}
+	input[type=text]
+	{
+		padding:2px;
+	}
+nav {
+	padding: 0;
+	margin: 0;
+	width: 55%;
+	float: right;
+}
+
+
+header nav ul {
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border-right: 20px solid rgba(0,0,0,0.7);
+}
+
+header nav ul li {
+	float: left;
+	margin: 0;
+	display: inline;
+	width: 25%;
+	text-align: center;
+}
+
+header nav ul li:hover {
+	background: none;
+  font-style: bold;
+  transform: scale(1.2);
+}
+
+header nav ul li a {
+	text-decoration: none;
+	padding: 25px 20px;
+	color: #fff;
+	margin: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.45rem;
+}
+
+header nav ul li a:focus {
+	outline: none;
+}
+
+/* HEAD SECTION */
+
+header {
+	background-attachment: fixed;
+}
+
+
+
+@media (max-width:900px) {
+  .companyName {
+    width: 100%;
+    text-align: center;
+    padding: 4% 4%;
+  }
+  
+ .mainNav {
+    width: 100%;
+  }
+  
+  header nav ul {
+    border: none;
+  }
+  
+  header nav ul li a {
+    padding: 25px 2%;
+  }
+}

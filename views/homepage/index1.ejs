@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SPORTAL HOMEPAGE</title>
+  <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="/public/style.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+nav {
+  background: #333333;
+  color: #ffffff;
+  font-family: "din-condensed-web", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.features h3 {
+  margin-top: 0;
+  font-weight: 300;
+}
+.features p {
+  margin-bottom: 0;
+}
+
+article {
+  background: linear-gradient(45deg, #070808, #070000);
+  position: relative;
+}
+article:first-child h3 {
+  font-size: 3em;
+}
+article:nth-child(2) {
+  background: linear-gradient(45deg, #3a0e53, #00000c);
+}
+article:nth-child(3) {
+  background: linear-gradient(45deg, #00e2ff, #fa602a);
+}
+article:nth-child(4) {
+  background: linear-gradient(45deg, #9e0c80, #fcb400);
+}
+article:nth-child(5) {
+  background: linear-gradient(45deg, #fa602a, #00e2ff);
+}
+article:nth-child(6) {
+  background: linear-gradient(45deg, #9e0c80, #00e2ff);
+}
+article:last-child h3 {
+  font-size: 3em;
+}
+
+article > a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding: 1rem;
+  color: #ffffff;
+  height: 100%;
+}
+article > a:hover .thumbnail {
+  opacity: 0.2;
+}
+
+article .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: inset 10px -10px 25px rgba(0, 0, 0, 0.9), inset -10px 10px 25px rgba(0, 0, 0, 0.9);
+}
+
+article h3, article .comments, article .meta {
+  position: relative;
+  z-index: 1;
+}
+article h3 {
+  font-family: "adelle", Georgia, serif;
+  text-shadow: 1px 1px 1px #333333;
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+article .comments {
+  float: right;
+  background: #95ae20;
+  color: #333333;
+  font-family: "din-condensed-web", sans-serif;
+  padding: 0.25rem;
+}
+
+@media all and (min-width: 40em) {
+  .features {
+    font-size: 0px;
+  }
+
+  article {
+    display: inline-block;
+    width: 50%;
+    min-height: 200px;
+    vertical-align: top;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+  article:last-child {
+    width: 100%;
+  }
+
+  article > a {
+    position: absolute;
+    width: 100%;
+  }
+}
+@media all and (min-width: 70em) {
+  .features {
+    position: relative;
+    overflow: auto;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    margin-top: 2rem;
+  }
+
+  article {
+    display: block;
+    float: left;
+    min-height: 200px;
+    width: 33.3%;
+  }
+  article:first-child, article:last-child {
+    min-height: 400px;
+    width: 33.3%;
+  }
+  article:nth-child(5) {
+    clear: left;
+  }
+  article:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: .1%;
+  }
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body style="background-color:black">
+
+  <script type="text/javascript" src="//use.typekit.net/qqh1pgl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<div class="wrapper">
+ 
+  <div class="features">
+    <article>
+      <a href="#">
+        <h1 ><pre><b>S        
+P       where
+O       students
+R       become 
+T       scholars
+A      
+L
+                 </pre>
+                </b></h1>
+        <div class="thumbnail" style="background-image: url(https://cdn.dribbble.com/users/19849/screenshots/1070992/s-red.png);"></div>
+      </a>
+    </article>
+    <article>
+      <a  href="/about.ejs">
+        
+       
+
+        <div class="thumbnail" style="background-image: url(https://c1.sfdcstatic.com/content/dam/blogs/uk/small-business-about-us-page-600.jpg);"></div>"
+      </a>
+    </article>
+    <article>
+      <a  href="signin.ejs">
+          <h1>LOGIN/SIGNUP</h1>
+       
+        <div class="thumbnail" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDw8jfBUT2xqlnMQgREJ9zg0Q8omtI2nO9uzOqhBWfGkL3mQ4Xw);"></div>
+      </a>
+    </article>
+    <article>
+      <a href="/topten">
+        <h3>TOP UNIVERSITIES</h3>
+       
+     
+        <div class="thumbnail" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/6/63/USRD_upper_tier_stat_graph.svg);"></div>
+      </a>
+    </article>
+    <article><a href="/supportus.ejs">
+      <div class="thumbnail" style="background-image: url(data:image/png;base64,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);"></div>
+      </a></article>
+    <article>
+      <a href="/search/scholorship">
+        <h1>Search for scholarships</h1>
+        
+        
+        <div class="thumbnail" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqumGTEp6acJUIKz9WLzptVlt49QraQO9YQz9rHII8lbSa7uYezQ);"></div>
+      </a>
+    </article>
+    <article>
+      <a href="./form/log.ejs">
+        <h1>Find the perfect scholarship</h1>
+        
+        
+        <div class="thumbnail" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Rojrfc1agjGqJVci2XR-I2DVC3pbmNy7GzmQ8svqEQUcD8uXPw);"></div>
+      </a>
+    </article>
+  </div>
+  
+  <p>
+
+</div>
+  
+  
+
+</body>
+
+</html>

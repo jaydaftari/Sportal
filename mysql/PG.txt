@@ -1,0 +1,43 @@
+CREATE TABLE SPORTAL.POST_GRADUATIONS
+(ID_NO INT(3) NOT NULL,
+STREAM VARCHAR(9),
+Foreign Key (ID_NO) references SPORTAL.SCHOLORSHIP(ID_NO));
+
+
+INSERT INTO sportal.Post_GRADUATIONS (ID_NO,STREAM) 
+values
+(1,'science'),
+(1,'commerce'),
+(1,'arts'),
+(1,'others'),
+(8,'science'),
+(11,'science'),
+(11,'commerce'),
+(11,'arts'),
+(11,'others'),
+(14,'science'),
+(14,'commerce'),
+(14,'arts'),
+(14,'others'),
+(15,'science'),
+(15,'commerce'),
+(15,'arts'),
+(15,'others'),
+(19,'science'),
+(26,'science'),
+(26,'commerce'),
+(26,'arts'),
+(26,'others'),
+(28,'science'),
+(28,'commerce'),
+(28,'arts'),
+(28,'others'),
+(29,'science'),
+(29,'commerce'),
+(29,'arts'),
+(29,'others'),
+(32,'science'),
+(32,'commerce'),
+(32,'arts'),
+(32,'others'),
+(33,'commerce');

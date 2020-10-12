@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-image:url("public/h.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: absolute;
+        background-repeat:no-repeat
+        
+    }
+    img{
+        z-index:-100;
+    }
+
+    a:link{
+        z-index:100;
+        color:rgb(137, 158, 149);
+        font-size:25px;
+        font-weight:400;
+        font-style: oblique;
+        text-decoration: none;
+
+    }
+    a:visited{
+        z-index:100;
+        color:rgb(137, 158, 149);
+        font-size:25px;
+        font-weight:400;
+        font-style: oblique;
+        text-decoration: none;
+    }
+    a:hover{
+        z-index:100;
+        color:rgb(147, 243, 201);
+        font-size:30px;
+        font-weight:400;
+        font-style: oblique;
+        text-decoration: none;
+
+    }
+   
+    a:active{
+        z-index:100;
+        color:rgb(137, 158, 149);
+        font-size:25px;
+        font-weight:400;
+        font-style: oblique;
+        text-decoration: none;
+
+    }
+   
+    </style>
+</head>
+
+<body>  
+    
+        <ul>
+            <% data.forEach(function(item){ %>
+                <li>             
+                <a href="/a/<%= item.ID_NO %>"> <%= item.SCHOLORSHIP_NAME %>  </a>
+            </li>
+            <% }); %>
+        </ul>
+
+</body>
+
+
+
+</html>
+
+
+
