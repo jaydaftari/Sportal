@@ -1,2 +1,2 @@
 # Sportal
- Sportal: Online Scholarship Portal
+ Sportal: Online Scholarship Portal for students
