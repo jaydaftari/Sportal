@@ -5,11 +5,7 @@
 There are many website from where we can look for the scholarships, but the filters for searching the scholarships are quite uncommon. Sportal tries to bring the easy search for scholarship with a very littel information. User can look for the scholarships that they are eligible for in few clicks.
 
 <h2>Technologies used</h2>
--> HTML
--> CSS
--> JavaScript
--> Node.js
--> MySQL
+HTML,CSS,JavaScript,Node.js,MySQL
 
 <h2>Running instructions</h2>
 Download and install MySQL from here
